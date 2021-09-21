@@ -1,0 +1,21 @@
+{
+  "name": "electron-printer",
+  "version": "1.0.0",
+  "description": "A electron app for printing",
+  "main": "main.js",
+  "scripts": {
+    "start": "chcp 65001 && electron ."
+  },
+  "author": "cjj",
+  "devDependencies": {
+    "electron": "^9.1.0"
+  },
+  "dependencies": {
+    "electron-pos-printer": "^1.2.0",
+    "electron-log": "^4.3.4",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa2-cors": "^2.0.6"
+  }
+}
