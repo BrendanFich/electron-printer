@@ -6,8 +6,8 @@ const createKoaServer = require('./src/koaServer/app.js')
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: 400,
-    height: 200,
+    width: 420,
+    height: 220,
     icon: nativeImage.createFromPath('./icon.ico'),
     webPreferences: {
       nodeIntegration: true,

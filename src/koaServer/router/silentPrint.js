@@ -53,7 +53,6 @@ router.post('/silentPrint', async (ctx, next) => {
       ctx.body = new ErrorModel(`打印机不能为空`)
     }
   }
-	console.log(printValid)
   if (!printValid) return
 
   // 打印
