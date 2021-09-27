@@ -4,18 +4,39 @@
     <meta charset="UTF-8" />
     <title>打印插件</title>
     <style>
+      body {
+        position: relative;
+        margin: 10px;
+        padding: 0;
+      }
+      ol {
+        margin: 0;
+        padding-left: 20px;
+      }
+      #more-btn {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+      }
+      .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .text {
+        font-size: 18px;
+        font-weight: 800;
+      }
     </style>
   </head>
   <body>
-<pre>
-  POST接口：http://127.0.0.1:1006/print/silentPrint
-  入参：
-  {
-    "type": "html",
-    "content": "&lt;div&gt; hello world&lt;/div&gt;",
-    "pageSize": "A4",
-    "pcs": 1
-  }
-</pre>
+    <div class="description">
+      <span class="text">该插件用于chis打印</span><a id="more-btn">more</a>
+    </div>
+    <div>当前可用的打印机列表：</div>
+    <ol id='list_printers'></ol>
+    
+    <script src="./renderer.js"></script>
   </body>
 </html>
